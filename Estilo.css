@@ -1,0 +1,130 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root { 
+
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray: hsl(0, 0%, 95%);
+}
+
+h2 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: #FFFFFF;
+    font-size:48px;
+    padding-left: 40px;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+}
+
+img {
+    padding-left: 40px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 100px; 
+    margin-left: 40px;
+    border-color: #FFFFFF;
+}
+
+button:hover {
+    cursor: pointer; 
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+
+}
+
+.Main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.caja-1 {
+    background: var(--Bright-orange);
+    height: 600px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.caja-2 {
+    background: var(--Dark-cyan);
+    height: 600px;
+}
+.caja-3 {
+    background: var(--Very-dark-cyan);
+    height: 600px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.texto {
+    color: var(--Transparent-white);
+    padding: 50px;
+    letter-spacing: 0.2px;
+}
+
+.btn-1 {
+    color: var(--Bright-orange);
+}
+.btn-1:hover {
+    background-color: var(--Bright-orange);
+    
+}
+.btn-2 {
+    color: var(--Dark-cyan);
+}
+.btn-2:hover {
+    background-color: var(--Dark-cyan);
+}
+.btn-3 {
+    color: var(--Very-dark-cyan);
+}
+.btn-3:hover {
+    background-color: var(--Very-dark-cyan);
+    
+}
+
+@media (max-width: 1024px) {
+   .Main {
+       display: flex;
+       flex-wrap: wrap;
+       margin: 100px 20px;
+       max-width: 700px;
+    
+   }
+   button {
+    margin-top: 30px; 
+    margin-left: 40px;
+   }
+
+
+   .caja-1 {
+    border-radius: 10px 10px 0px 0px;
+    height: 500px;
+   }
+   .caja-2 {
+    height: 500px;
+   }
+
+   .caja-3 {
+    border-radius: 0px 0px 10px 10px;
+    height: 500px;
+   }
+}
